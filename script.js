@@ -5,7 +5,7 @@ const sortedBands = ar.sort((a, b) => {
   const strip = (name) => name.replace(/^(a |an |the )/i, '').trim();
   return strip(a) > strip(b) ? 1 : -1;
 });
-const ul = document.querySelector('#band');
+const ul = document.querySelector('#bands');
 sortedBands.map((i)=>{ 
     let li = document.createElement('li')
     li.textContent = i;
